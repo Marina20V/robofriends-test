@@ -10,7 +10,7 @@ class ErrorBoundry extends Component {
     }
 
 
-componenetDidCatch (error, info) {
+componentDidCatch (error, info) {
     this.setState({ hasError: true })
 
 }
@@ -18,8 +18,8 @@ componenetDidCatch (error, info) {
 
 
 render() {
-    if(this.state.hasError) {
-    return <h1>Ooops, that is not good</h1>
+    if (this.state.hasError) {
+    return  <h1>Ooops, that is not good</h1>
     } 
         return this.props.children
     }
